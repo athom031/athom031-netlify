@@ -199,6 +199,7 @@ header .navbar ul li a:hover {
   flex: 1 1 40rem;
   padding-top: 1rem;
   z-index: 1;
+  pointer-events: none;
 }
 .home .content h2 {
   font-size: 5rem;
