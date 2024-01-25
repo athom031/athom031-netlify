@@ -4,6 +4,9 @@
 :root {
   --nightwing-blue: #00d9ff;
   --base-dark-blue: #07021a;
+  --base-light-blue: #4a1fee;
+  --base-light-grey: #D3D3D3;
+  --nightwing-dark-blue: #006c80;
 }
 
 * {
@@ -22,13 +25,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #f7f7f7;
+  background: var(--base-light-grey);
   font-family: "Poppins", sans-serif;
-}
-
-*::selection {
-  background: #2b3dda;
-  color: #fff;
 }
 
 html {
@@ -39,29 +37,11 @@ html::-webkit-scrollbar {
   width: 0.8rem;
 }
 html::-webkit-scrollbar-track {
-  background: #D3D3D3;
+  background: var(--base-light-grey);
 }
 html::-webkit-scrollbar-thumb {
   background: var(--base-dark-blue);
 }
-
-/* pre loader start */
-.loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-  background: #e6eff1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
-.loader-container.fade-out {
-  top: -120%;
-}
-/* pre loader end */
 
 /* navbar starts */
 header {
@@ -75,8 +55,7 @@ header {
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  background-color: var(--base-light-grey);
 }
 section {
   min-height: 100vh;
@@ -84,24 +63,24 @@ section {
 }
 .heading {
   font-size: 3.5rem;
-  color: rgb(32, 32, 32);
+  color: var(--base-dark-blue);
   font-weight: 800;
   text-align: center;
 }
 .heading span {
-  color: rgb(115, 3, 167);
+  color: var(--base-light-blue);
 }
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0e2431;
+  color: var(--base-dark-blue);
 }
 header .logo i {
   font-size: 2.2rem;
 }
 header .logo:hover {
-  color: #fc8c05;
+  color: var(--base-light-blue);
 }
 header .navbar ul {
   list-style: none;
@@ -122,8 +101,8 @@ header .navbar ul li a {
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
+  color: var(--base-light-blue);
+  border-bottom: 0.2rem solid var(--base-light-blue);
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -213,13 +192,13 @@ header .navbar ul li a:hover {
 }
 .home .content p {
   font-size: 2.5rem;
-  color: #D3D3D3;
+  color: var(--base-light-grey);
   font-weight: 600;
   padding: 1rem 0;
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: white;
+  color: var(--base-light-blue);
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -256,7 +235,7 @@ header .navbar ul li a:hover {
 .social-icons a:focus,
 .social-icons a:hover {
   color: var(--base-dark-blue);
-  background-color: var(--nightwing-blue);
+  background-color: var(--base-light-blue);
 }
 /* social icons end */
 
@@ -858,7 +837,7 @@ form .button-area {
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #D3D3D3;
+  background: var(--base-light-grey);
   color: #07021A;
   border-radius: 50%;
   transition: 1s linear;
